@@ -11,6 +11,21 @@ export const CommanderProvider = ({ children }) => {
   // MTG API url
   const cardsUrl =
     'https://api.magicthegathering.io/v1/cards?supertypes=legendary&types=creature';
+
+  // UseEffect call on first Render
+  useEffect(() => {
+    fetchCards();
+  }, []);
+
+  // Fetch Call to API
+  const fetchCards = async () => {
+    const response = await fetch(cardsUrl);
+
+    const data = await response.json();
+
+    setCardData(data.cards);
+    setIsLoading(false);
+  };
 };
 
 export default CommanderContext;
