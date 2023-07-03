@@ -26,6 +26,17 @@ export const CommanderProvider = ({ children }) => {
     setCardData(data.cards);
     setIsLoading(false);
   };
+
+  // Component Return
+  return (
+    <CommanderContext.Provider
+      value={{
+        isLoading,
+        cardData,
+      }}>
+      {children}
+    </CommanderContext.Provider>
+  );
 };
 
 export default CommanderContext;
