@@ -30,3 +30,7 @@ body {
   width: 250px;
   height: 350px;
 }
+
+li {
+  list-style: none;
+}
