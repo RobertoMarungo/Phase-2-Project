@@ -34,3 +34,8 @@ body {
 li {
   list-style: none;
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
