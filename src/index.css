@@ -25,3 +25,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.card img {
+  width: 250px;
+  height: 350px;
+}
