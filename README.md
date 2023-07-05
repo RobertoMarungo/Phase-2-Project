@@ -1,4 +1,6 @@
-# Project Name
+# MTG Commander
+
+![](https://github.com/RobertoMarungo/Phase-2-Project/blob/main/Screenshot%202023-07-04%20at%2011.25.17%20PM.png)
 
 MTG Commander
 
@@ -42,5 +44,3 @@ npm install
 ## Contact
 
 robmarungo.dev@gmail.com
-
-![](https://github.com/RobertoMarungo/Phase-2-Project/blob/main/Screenshot%202023-07-04%20at%2011.25.17%20PM.png)
