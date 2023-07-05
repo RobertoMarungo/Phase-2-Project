@@ -1,6 +1,6 @@
 # MTG Commander
 
-[MTG Commander](https://precious-puffpuff-59858e.netlify.app/)
+Visit my Site 🦇 [MTG Commander](https://precious-puffpuff-59858e.netlify.app/) 🦇
 
 ![](https://github.com/RobertoMarungo/Phase-2-Project/blob/main/Screenshot%202023-07-04%20at%2011.25.17%20PM.png)
 
