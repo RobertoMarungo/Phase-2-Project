@@ -1,10 +1,10 @@
 # Project Name
 
-[MTG Commander]
+MTG Commander
 
 ## Description
 
-[Provide a brief description or overview of your project]
+This project is a simple react app that renders a list of Commander cards it also allows you to add more cards through a form
 
 ## Table of Contents
 
@@ -17,7 +17,11 @@
 
 ## Installation
 
-[Provide instructions on how to install and set up your project. Include any dependencies or prerequisites that need to be installed]
+To install run
+
+```bash
+npm install
+```
 
 ## Usage
 
@@ -37,5 +41,4 @@
 
 ## Contact
 
-[Provide your contact information, such as email or any other preferred method of communication, so that users or contributors can reach out to you with questions or inquiries]
-
+robmarungo.dev@gmail.com
