@@ -2,17 +2,23 @@
 
 ![](https://github.com/RobertoMarungo/Phase-2-Project/blob/main/Screenshot%202023-07-04%20at%2011.25.17%20PM.png)
 
+## Table of Contents
+
+- [Description](#Description)
+- [Features](#Features)
+- [Note](#Note)
+- [License](#license)
+- [Contact](#contact)
+
 ## Description
 
 This project uses a back end using render to fetch a list of cards and display them on a webpage. It also contains a form to add more commander cards to the list.
 
-## Table of Contents
+## Features
 
-- [Description](#Description)
-- [Getting Started](#GettingStarted)
-- [Note](#Note)
-- [License](#license)
-- [Contact](#contact)
+- Fetches cards data from the a render API
+- Renders a card for each commander displaying their name, image, rarity, legality, and card text
+- The form allows for more cards to be added to the commander list
 
 ## Code Explanation
 
@@ -61,7 +67,7 @@ export default CommanderList;
 To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
+2. Run `npm install` then run `npm start`.
 3. Click the form link and fill in the Blanks to add your favorite commander card to the list.
 
 ## Note
