@@ -4,10 +4,10 @@ import CommanderContext from '../context/CommanderContext';
 
 function CommanderForm() {
   const [name, setName] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+  const [image, setImage] = useState('');
   const [rarity, setRarity] = useState('Common');
   const [legality, setLegality] = useState('Legal');
-  const [cardText, setCardText] = useState('');
+  const [text, setText] = useState('');
 
   const { addCommander } = useContext(CommanderContext);
 
@@ -16,7 +16,7 @@ function CommanderForm() {
   };
 
   const handleImageChange = (event) => {
-    setImageUrl(event.target.value);
+    setImage(event.target.value);
   };
 
   const handleRarityChange = (event) => {
@@ -28,7 +28,7 @@ function CommanderForm() {
   };
 
   const handleCardTextChange = (event) => {
-    setCardText(event.target.value);
+    setText(event.target.value);
   };
 
   const handleSubmit = (event) => {
@@ -36,10 +36,10 @@ function CommanderForm() {
 
     const newCommander = {
       name,
-      imageUrl,
+      image,
       rarity,
       legality,
-      cardText,
+      text,
     };
     addCommander(newCommander);
   };
@@ -61,7 +61,7 @@ function CommanderForm() {
           type='text'
           id='image'
           placeholder='Insert Image Url...'
-          value={imageUrl}
+          value={image}
           onChange={handleImageChange}
         />
         <br />
@@ -85,12 +85,12 @@ function CommanderForm() {
           <option value='Banned'>Banned</option>
         </select>
         <br />
-        <label htmlFor='cardText'>Card Text: </label>
+        <label htmlFor='text'>Card Text: </label>
         <input
           type='text'
-          id='cardText'
+          id='text'
           placeholder='Insert Card Text here...'
-          value={cardText}
+          value={text}
           onChange={handleCardTextChange}
         />
         <br />

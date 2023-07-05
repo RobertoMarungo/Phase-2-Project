@@ -9,7 +9,8 @@ export const CommanderProvider = ({ children }) => {
   const [cardData, setCardData] = useState([]);
 
   // MTG API url
-  const cardsUrl = 'https://commander-app-data.onrender.com/commanders';
+  const cardsUrl =
+    'https://commander-app-data.onrender.com/commanders?_sort=id&order=desc';
 
   // UseEffect call on first Render
   useEffect(() => {
@@ -26,8 +27,18 @@ export const CommanderProvider = ({ children }) => {
     setIsLoading(false);
   };
 
-  const addCommander = (newCommander) => {
-    setCardData([newCommander, ...cardData]);
+  const addCommander = async (newCommander) => {
+    const response = await fetch(cardsUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newCommander),
+    });
+
+    const data = await response.json();
+
+    setCardData([data, ...cardData]);
   };
 
   // Component Return

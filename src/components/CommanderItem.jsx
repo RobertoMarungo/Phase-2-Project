@@ -9,7 +9,7 @@ function CommanderItem({ card }) {
 
       <img
         src={card.image || 'https://i.imgur.com/LdOBU1I.jpg'}
-        alt='mtg-card'></img>
+        alt={card.name}></img>
 
       <h4>
         {card.rarity}
