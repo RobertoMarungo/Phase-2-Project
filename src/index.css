@@ -13,19 +13,27 @@ body {
 
 .title {
   text-align: center;
-  font-size: 3rem;
-  margin: 10px;
+  font-size: 1.5rem;
+  background-color: #45a049;
 }
 
-.title li {
+ul {
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li {
   list-style: none;
   display: inline;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 20px;
+  text-align: center;
+  color: #fff;
 }
 
-.title li:hover {
+li:hover {
   color: #4caf50;
 }
 
@@ -81,7 +89,7 @@ select {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 800px;
+  width: 400px;
 }
 
 button[type='submit'] {

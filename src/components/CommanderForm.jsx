@@ -42,6 +42,11 @@ function CommanderForm() {
       text,
     };
     addCommander(newCommander);
+    setName('');
+    setImage('');
+    setRarity('Common');
+    setLegality('Legal');
+    setText('');
   };
 
   return (
