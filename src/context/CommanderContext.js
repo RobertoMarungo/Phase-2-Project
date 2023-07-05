@@ -9,8 +9,7 @@ export const CommanderProvider = ({ children }) => {
   const [cardData, setCardData] = useState([]);
 
   // MTG API url
-  const cardsUrl =
-    'https://api.magicthegathering.io/v1/cards?supertypes=legendary&types=creature';
+  const cardsUrl = 'https://commander-app-data.onrender.com/commanders';
 
   // UseEffect call on first Render
   useEffect(() => {
@@ -23,8 +22,12 @@ export const CommanderProvider = ({ children }) => {
 
     const data = await response.json();
 
-    setCardData(data.cards);
+    setCardData(data);
     setIsLoading(false);
+  };
+
+  const addCommander = (newCommander) => {
+    setCardData([newCommander, ...cardData]);
   };
 
   // Component Return
@@ -33,6 +36,7 @@ export const CommanderProvider = ({ children }) => {
       value={{
         isLoading,
         cardData,
+        addCommander,
       }}>
       {children}
     </CommanderContext.Provider>

@@ -4,24 +4,19 @@ function CommanderItem({ card }) {
   return (
     <Card>
       <h2>
-        <strong>{card.name} 🦇</strong>
+        <strong>{card.name}</strong> <br />
       </h2>
 
       <img
-        src={card.imageUrl || 'https://i.imgur.com/LdOBU1I.jpg'}
+        src={card.image || 'https://i.imgur.com/LdOBU1I.jpg'}
         alt='mtg-card'></img>
 
       <h4>
-        {card.rarity}{' '}
-        {card.legalities.map((legal) =>
-          legal.format === 'Commander' ? (
-            <p key={card.id}>
-              {legal.format} : {legal.legality}
-            </p>
-          ) : null
-        )}
+        {card.rarity}
+        <br />
+        Commander: {card.legality}
       </h4>
-      <p>{card.originalText}</p>
+      <p>{card.text}</p>
     </Card>
   );
 }

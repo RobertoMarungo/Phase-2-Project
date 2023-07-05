@@ -1,7 +1,11 @@
 function Header() {
   return (
-    <div>
-      <h1>MTG EDH Commanders</h1>
+    <div className='title'>
+      <h1>Commanders</h1>
+      <ul>
+        <li>Home</li>
+        <li>Add a Commander</li>
+      </ul>
     </div>
   );
 }
