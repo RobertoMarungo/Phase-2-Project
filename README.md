@@ -6,6 +6,8 @@
 
 - [Description](#Description)
 - [Features](#Features)
+- [Code Explanation](#code-explanation)
+- [Getting Started](#getting-started)
 - [Note](#Note)
 - [License](#license)
 - [Contact](#contact)
